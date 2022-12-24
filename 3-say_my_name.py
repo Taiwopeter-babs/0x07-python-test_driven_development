@@ -14,10 +14,10 @@
 
 def say_my_name(first_name, last_name=""):
     """Prints formatted output of argument"""
-    
+
     first_name_err = "first_name must be a string"
     last_name_err = "last_name must be a string"
-    
+
     if (not isinstance(first_name, str)):
         raise TypeError(first_name_err)
 

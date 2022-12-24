@@ -11,7 +11,7 @@
 
 
 def matrix_divided(matrix, div):
-    """ 
+    """
         Returns a list of list of floating point numbers
     """
 
@@ -24,7 +24,6 @@ def matrix_divided(matrix, div):
 
     if (not isinstance(matrix, list)):
         raise TypeError(type_err)
-
 
     if (type(div) in [int, float]):
         if (div == 0):
@@ -45,5 +44,5 @@ def matrix_divided(matrix, div):
             if type(ele) not in [int, float]:
                 raise TypeError(type_err)
 
-    new = [[round(ele/div, 2) for ele in mat] for mat in matrix] 
+    new = [[round(ele/div, 2) for ele in mat] for mat in matrix]
     return (new)
